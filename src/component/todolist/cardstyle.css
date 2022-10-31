@@ -1,0 +1,24 @@
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 1rem;
+}
+
+.card{
+    flex: 20% 1;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px;
+    min-height: 200px;
+}
+
+.page{
+    background-color: #FFE6F7;
+    min-height: 100vh;
+}
+
+.remove{
+text-align: right;
+}

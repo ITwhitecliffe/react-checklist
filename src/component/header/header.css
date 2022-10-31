@@ -1,0 +1,11 @@
+.column-12{
+    display: flex;
+    background-color: #5837D0;
+    height: 8rem;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-direction: column; */
+}
