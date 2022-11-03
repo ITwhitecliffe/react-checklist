@@ -8,8 +8,8 @@ export default function Header() {
     <div className='column-12'>
        <Link className="btn-link" to={'/'}>Home</Link> 
         <h3>Intro to React</h3>
-       <Link className="btn-link" to={'/'}></Link> 
-      {/* <span>1. Record your thoughts   |   2. Prioritize your thoughts   |   3. Separate complex thoughts   |   4. Reflect on your thoughts   |   5. Develop a consistent routine</span> */}
+       <Link className="btn-link" to={'/edit'}></Link> 
+       <Link className="btn-link" to={'/hello'}></Link> 
     </div>
   )
 }

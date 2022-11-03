@@ -3,7 +3,7 @@ import { useState } from 'react'
 import TodoData from '../../data/todo'
 import Footer from '../footer/Footer'
 import Header from '../header/Header'
-import StudyList from './TodoList'
+import TodoList from './TodoList'
 
 function TodoApp() {
     const [todos, setTodos] = useState(TodoData)
@@ -30,7 +30,7 @@ function TodoApp() {
     <div className='page'>
       <Header/>
       {/* <StudyList todos={todos} removeTodo={removeItem} editTodo={editTodo}/> */}
-      <StudyList todos={todos} todoOoerations={todoOoerations}/>
+      <TodoList todos={todos} todoOoerations={todoOoerations}/>
       <Footer/>
     </div>
   )
