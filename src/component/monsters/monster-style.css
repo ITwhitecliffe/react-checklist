@@ -1,0 +1,25 @@
+.listofmonster{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.card{
+    width: 25%;
+    height: 200px;
+    background-image:linear-gradient(to bottom, #2146C7 , #8D72E1, #FF8DC7);
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-add{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #FECD70;
+}

@@ -3,7 +3,7 @@ import './cardstyle.css'
 import Checker from './Checker'
 import Todo from './Todo'
 
-function TodoList({todos, todoOoerations}) {
+function TodoList({todos, todoOperations}) {
 // function StudyList(props) {
 
 
@@ -16,7 +16,7 @@ function TodoList({todos, todoOoerations}) {
         //     <Checker/>
         //     <button className='remove'>x</button>
         //   </div>
-        <Todo key={todo.id} todo={todo} todoOoerations={todoOoerations}/>
+        <Todo key={todo.id} todo={todo} todoOperations={todoOperations}/>
         )
       )}
     </div>

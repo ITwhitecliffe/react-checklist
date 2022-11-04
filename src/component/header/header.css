@@ -1,6 +1,6 @@
 .column-12{
     display: flex;
-    background-color: #5837D0;
+    background-color: #EEF1FF;
     height: 8rem;
     width: 100%;
     color: white;
@@ -8,4 +8,8 @@
     align-items: center;
     justify-content: space-around;
     /* flex-direction: column; */
+}
+
+.btn-link{
+    color: #5837D0;
 }

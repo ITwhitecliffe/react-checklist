@@ -20,7 +20,7 @@ function TodoApp() {
       toEdit.task = todo.task;
     }
 
-    const todoOoerations = {
+    const todoOperations = {
       editTodo,
       removeTodo: removeItem
     }
@@ -28,9 +28,8 @@ function TodoApp() {
 
   return (
     <div className='page'>
-      <Header/>
       {/* <StudyList todos={todos} removeTodo={removeItem} editTodo={editTodo}/> */}
-      <TodoList todos={todos} todoOoerations={todoOoerations}/>
+      <TodoList todos={todos} todoOperations={todoOperations}/>
       <Footer/>
     </div>
   )

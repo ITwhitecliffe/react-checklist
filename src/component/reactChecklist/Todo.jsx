@@ -1,11 +1,11 @@
 import React from 'react'
 import Checker from './Checker'
 
-function Todo({todo, todoOoerations}) {
+function Todo({todo, todoOperations}) {
 
   const doRemove = (e) => {
     e.preventDefault();
-    todoOoerations.removeTodo(todo)
+    todoOperations.removeTodo(todo)
   }
 
   return (

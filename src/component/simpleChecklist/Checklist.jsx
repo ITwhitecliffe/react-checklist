@@ -18,7 +18,7 @@ function Checklist() {
     }
 
   return (
-    <div className='page'>
+    <div>
         <h1>Get organize</h1>
         <div>
             <input placeholder="Add item..." value={inputText} onChange={handleChange} />

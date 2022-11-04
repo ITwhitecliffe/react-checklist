@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import domPic from '../images/dom.jpg';
+import Header from './header/Header';
 import './home.css'
 
 export default function Home() {
@@ -8,9 +9,10 @@ export default function Home() {
     const navigate = useNavigate()
     const handleChange = () => {
         setChecked(!checked);
-        setInterval(() => {
-            navigate("/todos");
-        }, 1000)
+        // setInterval(() => {
+        //     navigate("/todos");
+            
+        // }, 1000)
     };
 
     return (
@@ -20,7 +22,6 @@ export default function Home() {
                 <h2 className='purple'><label>Checklist <input className='checkbox' type="checkbox" checked={checked} onChange={handleChange} /></label></h2>
             </div>
             <img className='responsive' src={domPic} alt='dom' />
-
         </div>
     )
 }

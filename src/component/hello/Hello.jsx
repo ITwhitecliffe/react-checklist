@@ -13,7 +13,7 @@ function Hello() {
     }
 
   return (
-    <div>
+    <div className='page'>
         <h1>Hello {userName}</h1>
         <form onSubmit={handleClick}>
             <input onChange={handleChange} type='text' placeholder="what is your name?" value={input}/>
