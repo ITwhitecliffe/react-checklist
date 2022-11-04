@@ -8,6 +8,7 @@ import Checklist from './component/simpleChecklist/Checklist';
 import MonstersPage from './component/monsters/MonstersPage';
 import Header from './component/header/Header';
 import ChecklistApp from './component/reactChecklist/ReactChecklistPage';
+import TodoList from './component/todolist/TodoList'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/react" element={<ReactChecklistPage />} />
+        <Route exact path="/todo" element={<TodoList />} />
         {/* <Route exact path="/edit" element={<TodoForm />} /> */}
         <Route exact path="/hello" element={<Greeting />} />
         <Route exact path="/checklist" element={<Checklist />} />

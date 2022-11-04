@@ -1,0 +1,19 @@
+.btn-add{
+    background-color: blueviolet;
+    width:25px;
+    height: 25px;
+    border: none;
+    color: white;
+}
+
+.btn-minus{
+    background-color: blueviolet;
+    color: white;
+    width:25px;
+    height: 25px;
+    border: none;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    margin-top: 145px;
+}

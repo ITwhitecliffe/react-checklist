@@ -10,8 +10,9 @@
   }
   
 .page {
-  background-color: #150050;
-    min-height: 100vh;
+  /* background-color: #150050; */
+  background-image:linear-gradient(to bottom, #2146C7 , #8D72E1, #FF8DC7);
+  min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;

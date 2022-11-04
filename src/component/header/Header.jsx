@@ -9,6 +9,7 @@ export default function Header() {
        <Link className="btn-link" to={'/'}><h3>Intro to React</h3></Link> 
        <Link className="btn-link" to={'/hello'}>Hello</Link> 
        <Link className="btn-link" to={'/react'}>Checklist</Link> 
+       <Link className="btn-link" to={'/todo'}>To do List</Link> 
        <Link className="btn-link" to={'/checklist'}>Checklist</Link> 
        <Link className="btn-link" to={'/monsters'}>Monsters</Link> 
     </div>

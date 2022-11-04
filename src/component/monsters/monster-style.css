@@ -9,17 +9,18 @@
 .card{
     width: 25%;
     height: 200px;
-    background-image:linear-gradient(to bottom, #2146C7 , #8D72E1, #FF8DC7);
+    /* background-image:linear-gradient(to bottom, #2146C7 , #8D72E1, #FF8DC7); */
+    background-color: #EEEEEE;
     padding: 1rem;
     margin: 1rem;
-    color: white;
+    color: blueviolet;
     border-radius: 10px;
 }
 
-.btn-add{
+/* .btn-add{
     width: 40px;
     height: 40px;
     padding: 10px;
     border-radius: 50px;
-    background-color: #FECD70;
-}
+    background-color: #001253;
+} */
