@@ -5,7 +5,7 @@ import Header from './header/Header';
 import './home.css'
 
 export default function Home() {
-    const [checked, setChecked] =useState(false);
+    const [checked, setChecked] = useState(false);
     const navigate = useNavigate()
     const handleChange = () => {
         setChecked(!checked);

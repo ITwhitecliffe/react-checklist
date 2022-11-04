@@ -3,7 +3,7 @@ import './cardstyle.css'
 import Checker from './Checker'
 import Todo from './Todo'
 
-function TodoList({todos, todoOperations}) {
+function ReactChecklist({todos, todoOperations}) {
 // function StudyList(props) {
 
 
@@ -23,4 +23,4 @@ function TodoList({todos, todoOperations}) {
   )
 }
 
-export default TodoList
+export default ReactChecklist

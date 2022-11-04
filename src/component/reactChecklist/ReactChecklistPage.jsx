@@ -2,10 +2,9 @@ import React from 'react'
 import { useState } from 'react'
 import TodoData from '../../data/todo'
 import Footer from '../footer/Footer'
-import Header from '../header/Header'
-import TodoList from './TodoList'
+import ReactChecklist from './ReactChecklist'
 
-function TodoApp() {
+function ReactChecklistPage() {
     const [todos, setTodos] = useState(TodoData)
 
     const removeItem = (todo) => {
@@ -29,10 +28,10 @@ function TodoApp() {
   return (
     <div className='page'>
       {/* <StudyList todos={todos} removeTodo={removeItem} editTodo={editTodo}/> */}
-      <TodoList todos={todos} todoOperations={todoOperations}/>
+      <ReactChecklist todos={todos} todoOperations={todoOperations}/>
       <Footer/>
     </div>
   )
 }
 
-export default TodoApp
+export default ReactChecklistPage
