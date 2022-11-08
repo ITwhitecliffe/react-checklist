@@ -7,7 +7,7 @@ function MonsterList(props) {
     <>
         {/* MonsterList */}
         <div className='listofmonster'>
-        {props.monstersssssssss.map( info => <Monster monstersssssssss={info}/>)}
+        {props.monstersssssssss.map( (info, index) => <Monster key={index} id={index} monstersssssssss={info}/>)}
         {/* {props.monstersssssssss.map( monster => monster.id)} */}
         </div>
     </>

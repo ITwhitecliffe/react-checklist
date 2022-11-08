@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import MonsterList from "./MonsterList";
 import monsterData from '../../data/monsterData.js'
 import Search from "./Search";
@@ -20,16 +20,25 @@ function MonstersPage() {
           // monsterData.filter(monster => !text || monster.name === text )
     
           // partial name match 
-          //monsterData.filter(monster => monster.name.indexOf(text) !== -1)
+          // monsterData.filter(monster => monster.name.indexOf(text) !== -1)
     
           // partial name match insensitive 
           monsterData.filter(monster => monster.name.toLowerCase().indexOf(text.toLowerCase()) !== -1)
         )
       }
 
+      useEffect(() => {
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then((response) => response.json())
+        .then((users) => {
+          setCurrentList(users)
+        })
+      }, [])
+      
     const addMonster = (newMonster) => {
         setCurrentList( currentList => [...currentList, newMonster])
     }
+
 
 
   return (
