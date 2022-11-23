@@ -1,19 +1,32 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import domPic from '../images/dom.jpg';
-import Header from './header/Header';
 import './home.css'
+import useContentful from '../useContenful'
+import AuthorCard from './AuthorCard';
+
 
 export default function Home() {
+    const {authors, setAuthors} = useState([])
+    const {getAuthors} = useContentful();
+
+    useEffect(() => {
+        // console.log(response)
+        getAuthors()
+        .then(
+            (avatar) => setAuthors(avatar)
+            )
+    })
+
     const [checked, setChecked] = useState(false);
-    const navigate = useNavigate()
     const handleChange = () => {
         setChecked(!checked);
         // setInterval(() => {
         //     navigate("/todos");
-            
         // }, 1000)
     };
+
+
 
     return (
         <div className='page-container'>
@@ -22,6 +35,9 @@ export default function Home() {
                 <h2 className='purple'><label>Checklist <input className='checkbox' type="checkbox" checked={checked} onChange={handleChange} /></label></h2>
             </div>
             <img className='responsive' src={domPic} alt='dom' />
+            <div className="author">
+            {authors.map((author, index) => <AuthorCard key={index} author={author} />)}
+            </div>
         </div>
     )
 }
