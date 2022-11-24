@@ -9,9 +9,12 @@ import MonstersPage from './component/monsters/MonstersPage';
 import Header from './component/header/Header';
 import ChecklistApp from './component/reactChecklist/ReactChecklistPage';
 import TodoList from './component/todolist/TodoList'
+import ContentPage from './component/contenful/ContentPage';
+
 
 function App() {
 
+  
   return (
     <div className="App">
       <Header/>
@@ -23,6 +26,7 @@ function App() {
         <Route exact path="/hello" element={<Greeting />} />
         <Route exact path="/checklist" element={<Checklist />} />
         <Route exact path="/monsters" element={<MonstersPage />} />
+        <Route exact path="/contentful" element={<ContentPage />} />
       </Routes>
     </div>
   );

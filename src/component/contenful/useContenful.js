@@ -1,5 +1,3 @@
-import { Select } from "@material-ui/core";
-import { PersonalVideoTwoTone } from "@material-ui/icons";
 import { createClient } from "contentful";
 
 
@@ -14,22 +12,21 @@ const useContenful = ()=> {
     const getAuthors = async() => {
         try{
             const entries = await client.getEntries({
-                "type": "author",
-                "select" : "fields"
-            })
-            // .then((response) => response.json())
-            const displayEntries = entries.items.map((item) => {
-                const avatar = item.fields.avatar.fields;
-                return {
-                    // entries
-                    ...item.fields, avatar
+                sys: {
+                    space: "9dvweq79pmh0",
+                    type: "Entry"
                 }
+
             })
-           return displayEntries
+            
+            .then((response) => console.log(response.items[1].fields))
+
+         return entries
         } catch (error){
             console.log(`Error fetching authors: ${error}`);
         }
     }
+
     return {getAuthors}
 }
 
