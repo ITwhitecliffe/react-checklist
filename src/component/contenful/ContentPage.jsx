@@ -9,7 +9,7 @@ export default function ContentPage() {
     useEffect(() => {
         getAuthors().then((response) => response && setAuthors(authors))
             console.log(authors)
-    },[])
+    })
 
   return (
     <div>

@@ -5,3 +5,4 @@ const monsterData = [
   ]
 
 export default monsterData
+

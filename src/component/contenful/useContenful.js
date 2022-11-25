@@ -11,15 +11,9 @@ const useContenful = ()=> {
     
     const getAuthors = async() => {
         try{
-            const entries = await client.getEntries({
-                sys: {
-                    space: "9dvweq79pmh0",
-                    type: "Entry"
-                }
-
-            })
+            const entries = await client.getEntries()
             
-            .then((response) => console.log(response.items[1].fields))
+            .then((response) => console.log(response.items.fields))
 
          return entries
         } catch (error){
