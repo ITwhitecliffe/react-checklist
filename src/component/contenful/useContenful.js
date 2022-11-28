@@ -13,9 +13,32 @@ const useContenful = ()=> {
         try{
             const entries = await client.getEntries()
             
-            .then((response) => console.log(response.items.fields))
-
-         return entries
+            .then((response) => {
+                // console.table(response.items)
+                const avatar= response.items.map((item) => {
+                    let obj = {
+                        id: item.sys.id,
+                        name: item.fields.name, 
+                        description: item.fields.description, 
+                        image: item.fields.avatar.fields.file.url
+                    }
+                    // console.log(obj)
+                    return obj
+                })
+                // console.log(avatar) 
+                return avatar
+            })
+               
+        //     const info = entries.items.map((item) => {
+        //         const avatar = item.fields;
+        //         return {
+        //           avatar
+        //         };
+        //       });
+        
+        //       return info;
+        return entries
+        // console.log(entries) 
         } catch (error){
             console.log(`Error fetching authors: ${error}`);
         }
@@ -33,3 +56,4 @@ export default useContenful
 
 // for development mode
 // Content Preview API - access token
+ 

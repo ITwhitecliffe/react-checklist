@@ -32,5 +32,10 @@
 
 
 .author{
-color: white;
+color: black;
+}
+
+.profile{
+  width: 200px;
+  height: auto;
 }

@@ -1,11 +1,17 @@
 import React from 'react'
 
-function AuthorCard( {author}) {
+function AuthorCard({avatars}) {
+  console.log(avatars)
+  const {name, description, image} = avatars
   return (
     <div>
-    <img src={author.avatar.fields.file.url} alt='profile'/>
-      <h3>{author.name}</h3>
-      <p>{author.description}</p>
+     
+    <img src={image} alt='profile' className='profile'/>
+      <h3>{name}</h3>
+      <p>{description}</p>
+    {/* <img src={avatars.image} alt='profile'/>
+      <h3>{avatars.name}</h3>
+      <p>{avatars.description}</p> */}
     </div>
   )
 }
