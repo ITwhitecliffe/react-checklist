@@ -14,7 +14,7 @@ const useContenful = ()=> {
             const entries = await client.getEntries()
             
             .then((response) => {
-                // console.table(response.items)
+                // console.table(response.items[0].item.sys.id)
                 const avatar= response.items.map((item) => {
                     let obj = {
                         id: item.sys.id,
