@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Counter from "../reducer/Counter";
 import TodoWithReducer from "../reducer/TodoWithReducer";
+import Profile from "../themeContext/Profile";
+import Login from "../themeContext/Login";
 
 function Greeting() {
   // const [fName, setFName] = useState('')
